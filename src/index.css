@@ -30,6 +30,10 @@
   min-width: 300px;
 }
 
+.card > p {
+  font-weight: 600;
+}
+
 .change_btn {
   user-select: none;
   width: 40%;
@@ -42,7 +46,7 @@
   cursor: pointer;
   border:dashed 1px rgb(153, 81, 81);
   border-radius: 3rem;
-  transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s;
 }
 
 .change_btn > p {
@@ -66,60 +70,9 @@
 
 
 @media (min-width: 965px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .App {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 40%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0px 0px 58px 1px rgba(0,0,0,0.75);
-    gap: 1rem;
-    padding-left: 5rem;
-    position: relative;
-  }
-  
-  .change_btn {
-    user-select: none;
-    width: 40%;
-    display: flex;
-    gap: .8rem;
-    padding: .5rem .8rem;
-    align-self: flex-end;
-    align-items: center;
-    cursor: pointer;
-    border:dashed 1px rgb(153, 81, 81);
-    border-radius: 3rem;
-    transition: color 0.2s, background-color 0.2s;
-  }
-  .bxs-quote-alt-left{
-    font-size: 3rem;
-    position: absolute;
-    left: 1rem;
-  }
-  .change_btn:hover {
-    background-color:rgb(153, 81, 81);
-    color: white;
-  }
 
   .change_btn > p {
-    display:contents
+    display:contents;
   }
   
 }
